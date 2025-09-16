@@ -1,12 +1,12 @@
-﻿public class TestClass
-{
-    static void Main(string[] args)
-    {
-        Console.WriteLine("Hello, World!");
-    }
+﻿using System;
 
-    public static string HelloWorld()
+namespace HelloWorld.ConsoleClient
+{
+    public class Program
     {
-        return "Hello, World!";
+        public static void Main(string[] args)
+        {
+            Console.WriteLine("Hello World");
+        }
     }
 }
