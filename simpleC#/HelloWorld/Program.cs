@@ -7,7 +7,7 @@ namespace HelloWorld
     {
         public static void Main(string[] args)
         {
-            string connectionString = "Server=localhost\\SQLEXPRESS;Database=testdb;User Id=testuser;Password=Qwerty_123;";
+            string connectionString = "Server=localhost\\SQLEXPRESS;Database=testdb;Trusted_Connection=True;";
             
             Console.WriteLine("Opening connection");
             using (SqlConnection connection = new SqlConnection(connectionString))
