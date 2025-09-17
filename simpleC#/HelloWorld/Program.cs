@@ -35,7 +35,7 @@ namespace HelloWorld
                 Console.WriteLine("Inserting data");
                 using (SqlCommand insertCommand = new SqlCommand(insertQuery, connection))
                 {
-                    insertCommand.Parameters.AddWithValue("@value", "Sample text");
+                    insertCommand.Parameters.AddWithValue("@value", "Rain in Spain falls mainly on the plain");
                     insertCommand.ExecuteNonQuery();
                     Console.WriteLine("Row inserted successfully.");
                 }
